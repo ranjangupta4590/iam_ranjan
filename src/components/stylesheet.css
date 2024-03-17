@@ -1,0 +1,170 @@
+.Profile {
+  background-color: #262626;
+  border-radius: 25px;
+  width: 50%;
+  margin-right: 1em;
+  height: auto;
+}
+
+.leftdownright img {
+  border-radius: 25px;
+  object-position: center;
+}
+
+.Profile iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.iframe-container {
+  height: 100%;
+}
+
+.Right {
+  width: 50%;
+  margin-left: 1em;
+}
+
+.upright {
+  background-color: #d7d8db;
+  width: 100%;
+  margin-top: 1em;
+  height: 100%;
+  color: white;
+  border-radius: 25px;
+}
+
+.downright {
+  height: 50%;
+  width: 100%;
+  margin-bottom: 1em;
+  height: auto;
+}
+
+.leftdownright {
+  width: 50%;
+  margin-left: 1em;
+  color: white;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.rightdownright {
+  background-color: #beee61;
+  width: 50%;
+  margin-right: 1em;
+  color: white;
+  border-radius: 25px;
+}
+
+.rightdownright img,
+.upright img {
+  height: 25px;
+}
+
+.text-animation {
+  position: relative;
+  overflow: hidden;
+  height: auto;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.text-slide {
+  animation: slideUp 0.5s ease-in-out forwards;
+}
+
+.resume-link {
+  transition: color 0.3s ease;
+}
+
+.resume-link:hover .arrow-icon {
+  transform: translateX(5px);
+}
+
+.arrow-icon {
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+@media screen and (max-width: 825px) {
+  .hero {
+    flex-wrap: wrap;
+  }
+  .Right {
+    margin-left: 0;
+    margin-top: 2em;
+    width: 100%;
+  }
+  .Profile {
+    width: 100%;
+    height: 500px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .hero {
+    flex-wrap: wrap;
+  }
+  .Right {
+    margin-left: 0;
+    margin-top: 1em;
+    width: 100%;
+  }
+  .downright {
+    flex-wrap: wrap-reverse;
+  }
+
+  .Profile {
+    width: 100%;
+    height: 410px;
+    margin-right: 0;
+  }
+  .rightdownright {
+    margin-right: 0;
+    height: 410px;
+    margin-top: 1em;
+    width: 100%;
+  }
+  .leftdownright {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.leftfooter img {
+  border-radius: 50%;
+  width: 45px;
+  border: 1px solid black;
+}
+
+
+@media screen and (max-width: 540px) {
+  .rightfooter{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #minwidth{
+    margin-top: 12px;
+  }
+  #removeborder{
+    border: 0;
+  }
+  .leftfooter{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 430px) {
+  #removeborder{
+    margin-top: 12px;
+  }
+}
