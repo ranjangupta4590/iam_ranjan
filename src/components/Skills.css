@@ -71,8 +71,8 @@
 .python svg,
 iframe,
 .python img {
-  width: 55px;
-  height: 55px;
+  width: 40px;
+  height: 40px;
 }
 
 .python {
@@ -99,8 +99,8 @@ iframe,
   .python svg,
   iframe,
   .python img {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
   }
 
   .python h2 {
@@ -232,7 +232,7 @@ iframe,
 }
 
 .imgcontainer{
-    padding: 15px;
+    padding: 10px;
     border-color: #fff;
     border-radius: 0.50rem;
     height: 280px;
