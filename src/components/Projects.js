@@ -11,6 +11,17 @@ import Menu from '../Assets/Projects/Menu.png'
 const Work = [
 
   {
+    id: 13,
+    name: "Quanta AI SaaS Application",
+    videoLink: "https://youtu.be/bueu8gvtnFM",
+    youtube_id: "bueu8gvtnFM",
+    github: "https://github.com/ranjangupta4590/Quanta-AI-SaaS-Applications",
+    link: "https://quanta-ai--beta.vercel.app/",
+    description: " Quanta AI, a SaaS application designed to streamline your content generation needs. Quanta AI utilizes cutting-edge technologies to offer features such as Chat, Code, Image, and Video generation, powered by the OpenAI API. Quanta delivers a comprehensive solution for content creators.",
+    tech_Stack: "Next.js, TypeScript, Shadcn, Tailwind CSS, Postgrey, Prisma, Crisp, Clerk, Stripe",
+
+  },
+  {
     id: 0,
     name: "E-Commerce Website",
     videoLink: "https://youtu.be/QVdnxr0H1XQ",
