@@ -102,7 +102,7 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li className="cursor-pointer pl-3 hover:underline hover:text-blue-500">
-                        <a href='https://drive.google.com/file/d/1DP78vzXfZlM0gUGhs7eD8ERGjQhFWZTD/view?usp=sharing' target="_blank" rel="noreferrer" smooth={true} duration={500}>
+                        <a href='https://drive.google.com/file/d/1nnhm6euxklyDDm64jzS_XPuj5sqVgot-/view' target="_blank" rel="noreferrer" smooth={true} duration={500}>
                             My_Resume
                         </a>
                     </li>
