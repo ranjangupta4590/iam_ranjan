@@ -170,7 +170,7 @@ const Projects = () => {
       <div className="heading">
         <div className="headings flex items-baseline">
           <h1
-            className="px-5 text-2xl lg:px-20 lg:text-4xl font-semibold"
+            className="px-5 text-2xl lg:px-20 lg:text-4xl font-semibold text-black"
             id="projectsheading"
           >
             Projects

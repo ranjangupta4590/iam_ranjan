@@ -14,6 +14,7 @@ import { Link } from "react-router-dom";
 const navigation = [
   { name: "home", to: "/" },
   { name: "about", to: "about" },
+  { name: "experience", to: "experience" },
   { name: "contact", to: "contact" },
   { name: "projects", to: "projects" },
   { name: "achievement", to: "projects" },

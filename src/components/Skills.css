@@ -38,8 +38,8 @@
   }
 
   #projectsheading {
-    background-color: #262626;
-    color: #ccc;
+    background-color: #ca9307;
+    color: #000;
 }
 
 @media screen and (max-width: 1299px) {
@@ -199,7 +199,7 @@ iframe,
 }
 
 #projectsdiv {
-    border-top: 4px solid #262626;
+    border-top: 4px solid #a77b04;
 }
 
 .skilldiv {

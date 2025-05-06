@@ -8,6 +8,8 @@ import Footer from "./components/Footer";
 import Skills from "./components/Skills";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
+import Experience from "./components/Experience";
+import Services from "./components/Services";
 
 
 function App() {
@@ -25,6 +27,11 @@ function App() {
         
         <div className="mt-14">
           <div>
+            <Experience />
+          </div>
+        </div>
+        <div className="mt-14">
+          <div>
             <Skills />
           </div>
         </div>
@@ -35,6 +42,11 @@ function App() {
           </div>
         </div>
         
+        <div className="mt-14">
+          <div>
+            <Services />
+          </div>
+        </div>
         <div className="mt-14">
           <div>
             <Achievements />

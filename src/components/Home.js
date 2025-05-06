@@ -49,7 +49,7 @@ const Home = () => {
                 I’m a Full-Stack developer and always try to build exceptional applications.
                 {/* specializing in building exceptional digital experiences. */}
                 Currently, I’m focused on building SaaS Full-stack web
-                applications using Next.js and trying to combining with machine Learning.
+                applications using Next.js and trying to combine with Machine Learning and AI.
               </p>
               <div className="flex flex-row gap-4">
                 <Link to="projects" smooth={true} duration={500}>

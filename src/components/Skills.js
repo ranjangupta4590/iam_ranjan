@@ -12,7 +12,7 @@ export const Skills = () => {
     <div name='skills' className="Skills bg-black text-white">
       <div className="heading">
         <div className="headings flex items-baseline">
-          <h1 className="px-5 text-2xl lg:px-20 lg:text-4xl font-semibold">
+          <h1 className="px-5 text-2xl lg:px-20 lg:text-4xl text-black font-semibold">
             Skills
           </h1>
           <h4 className="text-lg px-4 worked">

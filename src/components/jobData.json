@@ -1,0 +1,26 @@
+[
+    {
+        "company": "MPYG Technology Pvt. Ltd.",
+        "role": "Software Developer Intern",
+        "location": "Remote",
+        "duration": "March 2024 – June 2024",
+        "description": [
+          "Contributed to the development of an AI-driven, AR-powered yoga platform, boosting user engagement by 25%, while utilizing Agile methodologies for timely feature delivery and effective project management.",
+          "Optimized frontend interfaces using React.js, improving user experience by 20%, and collaborated in brainstorming sessions to integrate AI and AR solutions within a cross-functional team.",
+          "Proactively identified a critical bug in the AR module during UAT and worked closely with the engineering team to implement a robust fix, preventing potential delays in production."
+        ]
+    },
+    {
+      "company": "Solitaire Infosys Pvt. Ltd.",
+      "role": "Frontend Developer",
+      "location": "Mohali, Punjab",
+      "duration": "July 2022 – August 2022",
+      "description": [
+        "Delivered a responsive web application for facilitating the adoption of stray animals, utilizing React.js and Bootstrap to create an intuitive and visually engaging user interface.",
+        "Collaborated within an Agile team of 5, contributing to sprint planning, code reviews, and version control management (Git) to ensure efficient development and project success.",
+        "Took ownership of UI consistency across different components, resolving styling and responsiveness issues that enhanced overall usability across devices."
+      ]
+    }
+    
+  ]
+  

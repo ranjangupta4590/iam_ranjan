@@ -82,17 +82,27 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li className="cursor-pointer hover:underline hover:text-blue-500">
-                        <Link to='skills' className="px-3" smooth={true} duration={500}>
+                        <Link to='experience' className="px-3" smooth={true} duration={500}>
+                            Experience
+                        </Link>
+                    </li>
+                    <li className="cursor-pointer hover:underline hover:text-blue-500">
+                        <Link to='skills'  smooth={true} duration={500}>
                             Skills
                         </Link>
                     </li>
                     <li className="cursor-pointer hover:underline hover:text-blue-500">
-                        <Link to='projects' smooth={true} duration={500}>
+                        <Link to='projects' className="px-3" smooth={true} duration={500}>
                             Projects
                         </Link>
                     </li>
                     <li className="cursor-pointer hover:underline hover:text-blue-500">
-                        <Link to='achievement' className="px-3" smooth={true} duration={500}>
+                        <Link to='services'  smooth={true} duration={500}>
+                            Services
+                        </Link>
+                    </li>
+                    <li className="cursor-pointer hover:underline hover:text-blue-500">
+                        <Link to='achievement' className="px-3"  smooth={true} duration={500}>
                             Achievements
                         </Link>
                     </li>
@@ -101,7 +111,7 @@ const Navbar = () => {
                             Contact
                         </Link>
                     </li>
-                    <li className="cursor-pointer pl-3 hover:underline hover:text-blue-500">
+                    <li className="cursor-pointer hover:underline pl-3 hover:text-blue-500">
                         <a href='https://drive.google.com/file/d/1nnhm6euxklyDDm64jzS_XPuj5sqVgot-/view' target="_blank" rel="noreferrer" smooth={true} duration={500}>
                             My_Resume
                         </a>
