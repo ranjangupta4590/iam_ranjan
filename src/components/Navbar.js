@@ -165,7 +165,7 @@ const Navbar = () => {
                                 <div className="space-y-2 py-6">
 
                                     <ul
-                                        className={'-mx-3 block rounded-lg px-3 py-1 text-base font-semibold leading-7 text-black hover:bg-blue-500'}
+                                        className={'-mx-3 block rounded-lg px-3 py-1 text-base font-semibold leading-7 text-black hover:bg-gray-50'}
                                     >
                                         <li className="p1 text-2xl">
                                             <Link onClick={handleClick} to="home" smooth={true} duration={500}>
@@ -177,6 +177,12 @@ const Navbar = () => {
                                             {" "}
                                             <Link onClick={handleClick} to="about" smooth={true} duration={500}>
                                                 About
+                                            </Link>
+                                        </li>
+                                        <li className="py-1 text-2xl">
+                                            {" "}
+                                            <Link onClick={handleClick} to="experience" smooth={true} duration={500}>
+                                                Experience
                                             </Link>
                                         </li>
 
@@ -191,6 +197,12 @@ const Navbar = () => {
                                             {" "}
                                             <Link onClick={handleClick} to="projects" smooth={true} duration={500}>
                                                 Projects
+                                            </Link>
+                                        </li>
+                                        <li className="py-1 text-2xl">
+                                            {" "}
+                                            <Link onClick={handleClick} to="services" smooth={true} duration={500}>
+                                                Services
                                             </Link>
                                         </li>
 
@@ -211,7 +223,7 @@ const Navbar = () => {
 
 
                                     <a
-                                        href="https://drive.google.com/file/d/1DP78vzXfZlM0gUGhs7eD8ERGjQhFWZTD/view?usp=sharing"
+                                        href="https://drive.google.com/file/d/1nnhm6euxklyDDm64jzS_XPuj5sqVgot-/view"
                                         className="text-xl font-semibold py-2 flex items-center"
                                     >
                                         My Resume

@@ -26,39 +26,41 @@ const About = () => {
             <p className="sm:text-right text-3xl">
               {" "}
               Please take a look around.</p>
-            {/* <div className='md:hidden'>
+            <div className=''>
               <Link to="contact" smooth={true} duration={500}>
-                  <button className="text-white text-xl mt-8 group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600 rounded-2xl">
-                    Hire Me
-                  </button>
-                </Link>
-              </div> */}
+                <button className="text-white text-xl mt-8 group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600 rounded-2xl">
+                  Hire Me
+                </button>
+              </Link>
+            </div>
           </div>
-          <div className="mx-auto text-white">
-            <p>
-              I am passionate about building excellent application that improves
-              the lives of those around me.
+          <div className="mx-auto text-white md:text-xl">
+            <p className='text-teal-400 text-xl md:text-2xl font-mono'>
+              Passionate Software Engineer | Full-Stack Developer | Problem Solver
             </p>
-            <p>
+            <p className='my-2'>
               {" "}
-              Where accuracy meets creativity in competitive programming and web development or software developement is where I find my niche. My track record as a constant top performer in competitive programming speaks to my abilities for problem-solving and willingness to take on new challenges. As an enthusiast of web development, I've effectively applied my knowledge to practical situations, utilising my front-end expertise to produce seamless user experiences.
+              {/* Where accuracy meets creativity in competitive programming and web development or software developement is where I find my niche. My track record as a constant top performer in competitive programming speaks to my abilities for problem-solving and willingness to take on new challenges. As an enthusiast of web development, I've effectively applied my knowledge to practical situations, utilising my front-end expertise to produce seamless user experiences. */}
+              ✅ <span className='text-yellow-500'>Full-Stack Expertise & Technical Proficiency</span>{" "}
 
+              <br />{" "}
+              I’m a passionate software engineer skilled in C++, Python, and the MERN stack. I specialize in building responsive, scalable applications using React.js, Next.js, Tailwind CSS, Node.js, and Express.js, with experience in PostgreSQL, MongoDB, Docker, and cloud platforms like AWS and Firebase.
             </p>
-            <p>
+            <p className='my-1'>
               {" "}
-              My endless interest and adaptability in the learning environment are what make me unique. I take an open-minded approach to every project, keen to explore new areas and technology in order to keep up with the changing needs of the business world.
+              {/* My endless interest and adaptability in the learning environment are what make me unique. I take an open-minded approach to every project, keen to explore new areas and technology in order to keep up with the changing needs of the business world.
               I have a very flexible way of learning and I am open to learning new fields as per the requirements.</p>
+                 */}
 
+              ✅ <span className='text-yellow-500'>Problem Solving, Collaboration & Adaptability</span> {" "}
+              <br />{" "}
+              I thrive in Agile teams, solving complex problems with clean, efficient code. With strong debugging skills and a growth mindset, I continuously explore emerging tech like AI and blockchain, ensuring I deliver innovative, high-performance solutions in collaborative, fast-paced environments.
+            </p>
           </div>
 
         </div>
       </div>
     </div>
-
-
-
-
-
   );
 };
 

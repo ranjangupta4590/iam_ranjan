@@ -17,6 +17,7 @@ const navigation = [
   { name: "experience", to: "experience" },
   { name: "contact", to: "contact" },
   { name: "projects", to: "projects" },
+  { name: "services", to: "services" },
   { name: "achievement", to: "projects" },
 ];
 

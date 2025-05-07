@@ -38,7 +38,7 @@ export default function Services() {
                     </div>
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">Services I Offer</h2>
                     <p className="text-gray-400 max-w-2xl mx-auto">
-                        We craft digital, graphic and dimensional thinking to create category-leading brand experiences that have meaning.
+                    I offer digital, graphic, and dimensional design services to craft impactful brand experiences that are meaningful and category-leading.
                     </p>
                 </div>
 
