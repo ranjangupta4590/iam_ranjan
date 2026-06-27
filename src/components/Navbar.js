@@ -67,10 +67,7 @@ const Navbar = () => {
 
                 {/* menu */}
                 <ul
-                    // className={`${!mobileMenuOpen  && 'lg:flex'? 'hidden lg:flex' : 'lg:flex lg:flex-row md:flex-row  text-white font-semibold px-3 justify-center'
-                    //     }`}
-                    className={`${!mobileMenuOpen ? 'hidden lg:flex' : 'flex lg:flex-row md:flex-row text-white font-semibold px-3 justify-center'}`}
-
+                    className={`${!mobileMenuOpen  && 'lg:flex'? 'hidden lg:flex' : 'lg:flex lg:flex-row md:flex-row  text-white font-semibold px-3 justify-center'}`}
                 >
                     <li className="cursor-pointer hover:underline hover:text-blue-500 ">
                         <Link to='home' className="px-3" smooth={true} duration={500}>
@@ -129,8 +126,8 @@ const Navbar = () => {
 
                 <div className={`${!navState ? 'text-white' : 'text-black'} hidden lg:flex lg:flex-1 lg:justify-end lg:text-xl`}>
                     <a href="https://github.com/ranjangupta4590" target="_blank" rel="noreferrer"><FaGithub className={`mr-4 text-xl ${!navState ? 'text-white' : 'text-black'}`} /></a>
-                    <a href="https://www.linkedin.com/in/ranjan-kumar-2023s/" target="_blank" rel="noreferrer"><FaLinkedinIn className={`mr-4 text-xl ${!navState ? 'text-white' : 'text-black'}`} [...]
-                    <a href="https://www.instagram.com/ranjan_gupta_official/" target="_blank" rel="noreferrer"><FaInstagram className={`mr-4 text-xl ${!navState ? 'text-white' : 'text-black'}`} [...]
+                    <a href="https://www.linkedin.com/in/ranjan-kumar-2023s/" target="_blank" rel="noreferrer"><FaLinkedinIn className={`mr-4 text-xl ${!navState ? 'text-white' : 'text-black'}`}/></a>
+                    <a href="https://www.instagram.com/ranjan_gupta_official/" target="_blank" rel="noreferrer"><FaInstagram className={`mr-4 text-xl ${!navState ? 'text-white' : 'text-black'}`} /></a>
                     <a href="mailto:ranjangupta35558@gmail.com" target="_blank" rel="noreferrer"><FaEnvelope className={`mr-4 text-xl ${!navState ? 'text-white' : 'text-black'}`} /></a>
                 </div>
 
