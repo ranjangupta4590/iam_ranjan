@@ -15,10 +15,14 @@ const Navbar = () => {
     const [navState, setnavState] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+    const handleMobileMenuToggle = () => {
+        setMobileMenuOpen((prevState) => !prevState);
+    };
 
-    const handleClick = () => {
-        setMobileMenuOpen(!mobileMenuOpen);
-    }
+    const closeMobileMenu = () => {
+        setMobileMenuOpen(false);
+    };
+
     const onNavScroll = () => {
         if (window.scrollY > 30) {
             setnavState(true);
@@ -50,67 +54,72 @@ const Navbar = () => {
                 <div className="flex lg:flex-1">
                     <a href="/" className="flex -m-1.5 p-1.5">
                         {/* <span className=" ml-1"><img src={logo} className="w-[3rem] h-[3rem]" alt="logo" /></span> */}
-                        <h1 className={`${!navState ? 'text-white' : 'text-black'} font-semibold text-lg`}>iam_Ranjan</h1>
+                        <h1 className={`text-white font-semibold text-lg`}>iam_Ranjan</h1>
                     </a>
                 </div>
 
                 <div className="flex lg:hidden">
                     <button
                         type="button"
+                        aria-label={mobileMenuOpen ? 'Close main menu' : 'Open main menu'}
                         className={`${!navState ? 'text-white' : 'text-black'} -m-2.5 inline-flex items-center justify-center rounded-md p-2.5`}
-                        onClick={() => setMobileMenuOpen(true)}
+                        onClick={handleMobileMenuToggle}
                     >
-                        <span className="sr-only">Open main menu</span>
-                        <Bars3Icon className={`${!navState ? 'text-white' : 'text-black'} h-7 w-7`} aria-hidden="true" />
+                        <span className="sr-only">{mobileMenuOpen ? 'Close main menu' : 'Open main menu'}</span>
+                        {mobileMenuOpen ? (
+                            <XMarkIcon className={`${!navState ? 'text-white' : 'text-black'} h-7 w-7`} aria-hidden="true" />
+                        ) : (
+                            <Bars3Icon className={`${!navState ? 'text-white' : 'text-black'} h-7 w-7`} aria-hidden="true" />
+                        )}
                     </button>
                 </div>
 
                 {/* menu */}
                 <ul
-                    className={`${!mobileMenuOpen  && 'lg:flex'? 'hidden lg:flex' : 'lg:flex lg:flex-row md:flex-row  text-white font-semibold px-3 justify-center'}`}
+                    className={`absolute left-0 right-0 top-full z-40 flex-col bg-slate-900/95 px-4 py-4 space-y-3 text-white font-semibold lg:static lg:flex lg:flex-row lg:items-center lg:justify-center lg:space-y-0 lg:space-x-3 lg:bg-transparent lg:px-3 ${mobileMenuOpen ? 'flex' : 'hidden'}`}
                 >
-                    <li className="cursor-pointer hover:underline hover:text-blue-500 ">
-                        <Link to='home' className="px-3" smooth={true} duration={500}>
+                    <li className="cursor-pointer hover:underline hover:text-blue-500">
+                        <Link to='home' className="block px-3" smooth={true} duration={500} onClick={closeMobileMenu}>
                             Home
                         </Link>
                     </li>
                     <li className="cursor-pointer hover:underline hover:text-blue-500">
-                        <Link to='about' smooth={true} duration={500}>
+                        <Link to='about' className="block px-3" smooth={true} duration={500} onClick={closeMobileMenu}>
                             About
                         </Link>
                     </li>
                     <li className="cursor-pointer hover:underline hover:text-blue-500">
-                        <Link to='experience' className="px-3" smooth={true} duration={500}>
+                        <Link to='experience' className="block px-3" smooth={true} duration={500} onClick={closeMobileMenu}>
                             Experience
                         </Link>
                     </li>
                     <li className="cursor-pointer hover:underline hover:text-blue-500">
-                        <Link to='skills'  smooth={true} duration={500}>
+                        <Link to='skills' className="block px-3" smooth={true} duration={500} onClick={closeMobileMenu}>
                             Skills
                         </Link>
                     </li>
                     <li className="cursor-pointer hover:underline hover:text-blue-500">
-                        <Link to='projects' className="px-3" smooth={true} duration={500}>
+                        <Link to='projects' className="block px-3" smooth={true} duration={500} onClick={closeMobileMenu}>
                             Projects
                         </Link>
                     </li>
                     <li className="cursor-pointer hover:underline hover:text-blue-500">
-                        <Link to='services'  smooth={true} duration={500}>
+                        <Link to='services' className="block px-3" smooth={true} duration={500} onClick={closeMobileMenu}>
                             Services
                         </Link>
                     </li>
                     <li className="cursor-pointer hover:underline hover:text-blue-500">
-                        <Link to='achievement' className="px-3"  smooth={true} duration={500}>
+                        <Link to='achievement' className="block px-3" smooth={true} duration={500} onClick={closeMobileMenu}>
                             Achievements
                         </Link>
                     </li>
                     <li className="cursor-pointer hover:underline hover:text-blue-500">
-                        <Link to='contact' smooth={true} duration={500}>
+                        <Link to='contact' className="block px-3" smooth={true} duration={500} onClick={closeMobileMenu}>
                             Contact
                         </Link>
                     </li>
                     <li className="cursor-pointer hover:underline pl-3 hover:text-blue-500">
-                        <a href='https://drive.google.com/file/d/1qyIZL4hiQZ2h3rCtyhfVG11ZJPhZdUpl/view?usp=sharing' target="_blank" rel="noreferrer" smooth={true} duration={500}>
+                        <a href='https://drive.google.com/file/d/1qyIZL4hiQZ2h3rCtyhfVG11ZJPhZdUpl/view?usp=sharing' target="_blank" rel="noreferrer" onClick={closeMobileMenu}>
                             My_Resume
                         </a>
                     </li>
@@ -124,11 +133,17 @@ const Navbar = () => {
                     </Link>
                 </div> */}
 
-                <div className={`${!navState ? 'text-white' : 'text-black'} hidden lg:flex lg:flex-1 lg:justify-end lg:text-xl`}>
+                {/* <div className={`${!navState ? 'text-white' : 'text-black'} hidden lg:flex lg:flex-1 lg:justify-end lg:text-xl`}>
                     <a href="https://github.com/ranjangupta4590" target="_blank" rel="noreferrer"><FaGithub className={`mr-4 text-xl ${!navState ? 'text-white' : 'text-black'}`} /></a>
                     <a href="https://www.linkedin.com/in/ranjan-kumar-2023s/" target="_blank" rel="noreferrer"><FaLinkedinIn className={`mr-4 text-xl ${!navState ? 'text-white' : 'text-black'}`}/></a>
                     <a href="https://www.instagram.com/ranjan_gupta_official/" target="_blank" rel="noreferrer"><FaInstagram className={`mr-4 text-xl ${!navState ? 'text-white' : 'text-black'}`} /></a>
                     <a href="mailto:ranjangupta35558@gmail.com" target="_blank" rel="noreferrer"><FaEnvelope className={`mr-4 text-xl ${!navState ? 'text-white' : 'text-black'}`} /></a>
+                </div> */}
+                <div className={`text-white hidden lg:flex lg:flex-1 lg:justify-end lg:text-xl`}>
+                    <a href="https://github.com/ranjangupta4590" target="_blank" rel="noreferrer"><FaGithub className={`mr-4 text-xl`} /></a>
+                    <a href="https://www.linkedin.com/in/ranjan-kumar-2023s/" target="_blank" rel="noreferrer"><FaLinkedinIn className={`mr-4 text-xl`}/></a>
+                    <a href="https://www.instagram.com/ranjan_gupta_official/" target="_blank" rel="noreferrer"><FaInstagram className={`mr-4 text-xl`} /></a>
+                    <a href="mailto:ranjangupta35558@gmail.com" target="_blank" rel="noreferrer"><FaEnvelope className={`mr-4 text-xl`} /></a>
                 </div>
 
 
