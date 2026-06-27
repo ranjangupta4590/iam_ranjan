@@ -112,7 +112,7 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li className="cursor-pointer hover:underline pl-3 hover:text-blue-500">
-                        <a href='https://drive.google.com/file/d/1nnhm6euxklyDDm64jzS_XPuj5sqVgot-/view' target="_blank" rel="noreferrer" smooth={true} duration={500}>
+                        <a href='https://drive.google.com/file/d/1qyIZL4hiQZ2h3rCtyhfVG11ZJPhZdUpl/view?usp=sharing' target="_blank" rel="noreferrer" smooth={true} duration={500}>
                             My_Resume
                         </a>
                     </li>
@@ -223,7 +223,7 @@ const Navbar = () => {
 
 
                                     <a
-                                        href="https://drive.google.com/file/d/1nnhm6euxklyDDm64jzS_XPuj5sqVgot-/view"
+                                        href="https://drive.google.com/file/d/1qyIZL4hiQZ2h3rCtyhfVG11ZJPhZdUpl/view?usp=sharing"
                                         className="text-xl font-semibold py-2 flex items-center"
                                     >
                                         My Resume

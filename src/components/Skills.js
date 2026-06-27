@@ -4,8 +4,152 @@ import mongo from '../Assets/mongo.png';
 import node from '../Assets/node.png';
 import next from '../Assets/next.png'
 import docker from '../Assets/docker.png'
+import claude from '../Assets/claude.webp'
+import odoo from '../Assets/odoo.png'
 
 import "./Skills.css";
+
+const CodexIcon = () => (
+  <svg viewBox="0 0 96 96" role="img" aria-label="Codex logo">
+    <rect width="96" height="96" rx="22" fill="#05070A" />
+    <path
+      d="M25 29.5L48 16L71 29.5V56.5L48 70L25 56.5V29.5Z"
+      fill="none"
+      stroke="#F8FAFC"
+      strokeWidth="6"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M48 16V70M25 29.5L48 43L71 29.5M25 56.5L48 43L71 56.5"
+      fill="none"
+      stroke="#00A67E"
+      strokeWidth="5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M35 81H61"
+      stroke="#F8FAFC"
+      strokeWidth="6"
+      strokeLinecap="round"
+    />
+  </svg>
+);
+
+const CursorIcon = () => (
+  <svg viewBox="0 0 96 96" role="img" aria-label="Cursor logo">
+    <rect width="96" height="96" rx="22" fill="#171717" />
+    <path
+      d="M48 15L76 31V63L48 81L20 63V31L48 15Z"
+      fill="#F6F7F8"
+    />
+    <path
+      d="M48 15L76 31L48 47L20 31L48 15Z"
+      fill="#D8DADD"
+    />
+    <path
+      d="M20 31L48 47V81L20 63V31Z"
+      fill="#FFFFFF"
+    />
+    <path
+      d="M76 31L48 47V81L76 63V31Z"
+      fill="#8D9298"
+    />
+    <path
+      d="M35 38L48 30L61 38L48 46L35 38Z"
+      fill="#4B5563"
+    />
+  </svg>
+);
+
+const WindowsIcon = () => (
+  <svg viewBox="0 0 96 96" role="img" aria-label="Windows OS logo">
+    <rect x="10" y="14" width="34" height="32" fill="#00A4EF" />
+    <rect x="50" y="14" width="36" height="32" fill="#00A4EF" />
+    <rect x="10" y="52" width="34" height="30" fill="#00A4EF" />
+    <rect x="50" y="52" width="36" height="30" fill="#00A4EF" />
+  </svg>
+);
+
+const JavaIcon = () => (
+  <svg viewBox="0 0 96 96" role="img" aria-label="Java logo">
+    <path
+      d="M43 12C55 22 24 32 47 43C35 32 66 24 43 12Z"
+      fill="#E76F00"
+    />
+    <path
+      d="M55 20C66 31 36 38 52 50C44 40 76 33 55 20Z"
+      fill="#E76F00"
+    />
+    <path
+      d="M26 58C39 53 64 54 70 59C64 66 35 66 26 58Z"
+      fill="#5382A1"
+    />
+    <path
+      d="M30 70C42 75 62 74 73 68"
+      fill="none"
+      stroke="#5382A1"
+      strokeWidth="6"
+      strokeLinecap="round"
+    />
+    <path
+      d="M24 79C39 88 67 86 79 76"
+      fill="none"
+      stroke="#E76F00"
+      strokeWidth="5"
+      strokeLinecap="round"
+    />
+  </svg>
+);
+
+const TypeScriptIcon = () => (
+  <svg viewBox="0 0 96 96" role="img" aria-label="TypeScript logo">
+    <rect x="10" y="10" width="76" height="76" rx="10" fill="#3178C6" />
+    <path d="M24 34H57V43H45V73H35V43H24V34Z" fill="#FFFFFF" />
+    <path
+      d="M59 72C55 72 51 71 48 69V59C51 62 55 64 59 64C63 64 65 63 65 61C65 59 63 58 58 56C51 53 48 50 48 44C48 37 54 33 62 33C66 33 70 34 73 36V46C70 43 67 41 63 41C60 41 58 42 58 44C58 46 60 47 65 49C72 52 75 55 75 62C75 69 69 72 59 72Z"
+      fill="#FFFFFF"
+    />
+  </svg>
+);
+
+const XmlIcon = () => (
+  <svg viewBox="0 0 96 96" role="img" aria-label="XML logo">
+    <rect x="16" y="10" width="64" height="76" rx="10" fill="#F97316" />
+    <path
+      d="M34 33L21 48L34 63M62 33L75 48L62 63"
+      fill="none"
+      stroke="#FFFFFF"
+      strokeWidth="7"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M53 29L43 67"
+      fill="none"
+      stroke="#111827"
+      strokeWidth="7"
+      strokeLinecap="round"
+    />
+  </svg>
+);
+
+const KubernetesIcon = () => (
+  <svg viewBox="0 0 96 96" role="img" aria-label="Kubernetes logo">
+    <path
+      d="M48 7L82 27V69L48 89L14 69V27L48 7Z"
+      fill="#326CE5"
+    />
+    <circle cx="48" cy="48" r="13" fill="#FFFFFF" />
+    <path
+      d="M48 18V35M48 61V78M18 48H35M61 48H78M27 27L39 39M57 57L69 69M69 27L57 39M39 57L27 69"
+      stroke="#FFFFFF"
+      strokeWidth="5"
+      strokeLinecap="round"
+    />
+    <circle cx="48" cy="48" r="5" fill="#326CE5" />
+  </svg>
+);
 
 export const Skills = () => {
   return (
@@ -343,6 +487,15 @@ export const Skills = () => {
               <h2 className="text-white mt-2">ChatGPT</h2>
             </div>
 
+            <div className="python flex flex-col items-center">
+              <img className='w-20 mx-auto' src={claude} alt="Claude logo" />
+              <h2 className="text-white mt-2">Claude</h2>
+            </div>
+            <div className="python flex flex-col items-center">
+              <CodexIcon />
+              <h2 className="text-white mt-2">Codex</h2>
+            </div>
+
             {/* <div className="python flex flex-col items-center">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Adobe_Firefly_Logo.svg/1200px-Adobe_Firefly_Logo.svg.png"
@@ -488,6 +641,26 @@ export const Skills = () => {
             <div className="python flex flex-col items-center">
               <img className='w-20 mx-auto' src={mongo} alt="MongoDB icon" />
               <h2 className="text-white mt-2">MongoDB</h2>
+            </div>
+
+            <div className="python flex flex-col items-center">
+              <JavaIcon />
+              <h2 className="text-white mt-2">Java</h2>
+            </div>
+
+            <div className="python flex flex-col items-center">
+              <TypeScriptIcon />
+              <h2 className="text-white mt-2">TypeScript</h2>
+            </div>
+
+            <div className="python flex flex-col items-center">
+              <XmlIcon />
+              <h2 className="text-white mt-2">XML</h2>
+            </div>
+
+            <div className="python flex flex-col items-center">
+              <img className='w-20 mx-auto' src={odoo} alt="Odoo icon" />
+              <h2 className="text-white mt-2">Odoo</h2>
             </div>
 
             <div className="python flex flex-col items-center">
@@ -782,23 +955,30 @@ export const Skills = () => {
             </div>
 
             <div className="python flex flex-col items-center">
-              <img
-                src="https://code.visualstudio.com/assets/images/code-stable.png"
-                alt="VS Code"
-              />
+              <img className='w-20 mx-auto' src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" alt="VS Code" />
               <h2 className="text-white mt-2">VS Code</h2>
+            </div>
+            <div className="python flex flex-col items-center">
+              <img className='w-20 mx-auto' src="https://upload.wikimedia.org/wikipedia/commons/1/1d/PyCharm_Icon.svg" alt="PyCharm" />
+              <h2 className="text-white mt-2">PyCharm</h2>
+            </div>
+            <div className="python flex flex-col items-center">
+              <CursorIcon />
+              <h2 className="text-white mt-2">Cursor</h2>
             </div>
             
             <div className="python flex flex-col items-center object-cover overflow-hidden">
-              <img className='w-30 mx-auto' src={docker} alt="Nodejs icon" />
+              <img className='w-30 mx-auto' src={docker} alt="Docker icon" />
               <h2 className="text-white mt-2">Docker</h2>
             </div>
 
+            <div className="python flex flex-col items-center object-cover overflow-hidden">
+              <KubernetesIcon />
+              <h2 className="text-white mt-2">Kubernetes</h2>
+            </div>
+
             <div className="python flex flex-col items-center">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/1024px-Windows_logo_-_2012.svg.png"
-                alt="Windows OS"
-              />
+              <WindowsIcon />
               <h2 className="text-white mt-2">WindowsOS</h2>
             </div>
 

@@ -1,4 +1,15 @@
 [
+  {
+        "company": "Oodles Technology Pvt. Ltd.",
+        "role": "Associate Software Developer",
+        "location": "Remote",
+        "duration": "November 2025 – Present",
+        "description": [
+          "Built and customized Odoo ERP modules using Python and XML, implementing a multi-company system with role-based access control (RBAC) for Super Admin, Company, and Public roles, improving scalability by 30%.",
+          "Designed backend business logic, automated workflows, and XML views, reducing configuration errors by 25% and improving system reliability.",
+          "Resolved critical bugs and optimized ORM models within a 4-member Agile/Scrum team, improving API response time by 15%."
+        ]
+    },
     {
         "company": "MPYG Technology Pvt. Ltd.",
         "role": "Software Developer Intern",

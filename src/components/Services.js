@@ -1,6 +1,12 @@
 import "./Skills.css";
 const services = [
     {
+        icon: "⚙️",
+        title: "Odoo Customization",
+        description:
+            "Custom Odoo ERP modules, workflow automation, XML views, access rules, reports, and integrations tailored to business operations.",
+    },
+    {
         icon: "🧩",
         title: "Full Stack Development",
         description:
@@ -11,12 +17,6 @@ const services = [
         title: "Frontend Design",
         description:
             "Crafting pixel-perfect, accessible interfaces using Next.js,React.js, Tailwind CSS, and design systems that enhance user engagement and responsiveness.",
-    },
-    {
-        icon: "🌐",
-        title: "Web Design",
-        description:
-            "Creating modern, user-centered web designs that are visually appealing, SEO-friendly, AI integrated, and fully responsive across all screen sizes.",
     },
 ];
 
@@ -38,7 +38,7 @@ export default function Services() {
                     </div>
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">Services I Offer</h2>
                     <p className="text-gray-400 max-w-2xl mx-auto">
-                    I offer digital, graphic, and dimensional design services to craft impactful brand experiences that are meaningful and category-leading.
+                    I build business-focused ERP customizations, web applications, and frontend experiences that are practical, scalable, and easy to use.
                     </p>
                 </div>
 
