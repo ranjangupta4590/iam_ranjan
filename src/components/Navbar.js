@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import logo from '../Assets/R.png';
 import {
     FaGithub,
     FaLinkedinIn,
@@ -45,7 +44,7 @@ const Navbar = () => {
                     }`}
             >
                 {/* <div className="container pb-7">  */}
-                {/* <Link to='contact' smooth={true} duration={500}><Button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-blue-600 hover:border-blue-600'>Hire Me</Button></Link> */}
+                {/* <Link to='contact' smooth={true} duration={500}><Button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-blue-600 hover:border-blue-600'>Hire Me</[...]
                  {/* </div> */}
 
                 <div className="flex lg:flex-1">
@@ -128,133 +127,20 @@ const Navbar = () => {
 
                 <div className={`${!navState ? 'text-white' : 'text-black'} hidden lg:flex lg:flex-1 lg:justify-end lg:text-xl`}>
                     <a href="https://github.com/ranjangupta4590" target="_blank" rel="noreferrer"><FaGithub className={`mr-4 text-xl ${!navState ? 'text-white' : 'text-black'}`} /></a>
-                    <a href="https://www.linkedin.com/in/ranjan-kumar-2023s/" target="_blank" rel="noreferrer"><FaLinkedinIn className={`mr-4 text-xl ${!navState ? 'text-white' : 'text-black'}`} /></a>
-                    <a href="https://www.instagram.com/ranjan_gupta_official/" target="_blank" rel="noreferrer"><FaInstagram className={`mr-4 text-xl ${!navState ? 'text-white' : 'text-black'}`} /></a>
+                    <a href="https://www.linkedin.com/in/ranjan-kumar-2023s/" target="_blank" rel="noreferrer"><FaLinkedinIn className={`mr-4 text-xl ${!navState ? 'text-white' : 'text-black'}`} [...]
+                    <a href="https://www.instagram.com/ranjan_gupta_official/" target="_blank" rel="noreferrer"><FaInstagram className={`mr-4 text-xl ${!navState ? 'text-white' : 'text-black'}`} [...]
                     <a href="mailto:ranjangupta35558@gmail.com" target="_blank" rel="noreferrer"><FaEnvelope className={`mr-4 text-xl ${!navState ? 'text-white' : 'text-black'}`} /></a>
                 </div>
 
 
 
 
-                {/* mobile view */}
-                <Dialog
-                    as="div"
-                    className="lg:hidden"
-                    open={mobileMenuOpen}
-                    onClose={setMobileMenuOpen}
-                >
-                    <div className="fixed inset-0 z-50" />
-                    <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full  bg-white px-4 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-                        <div className="flex items-center justify-between">
-                            <a href="/" className="-m-1.5 p-1.5">
-                                <h1 className="font-semibold text-lg">iam_Ranjan</h1>
-                            </a>
-                            <button
-                                type="button"
-                                className="-m-2.5 rounded-md p-2.5 text-gray-700"
-                                onClick={() => setMobileMenuOpen(false)}
-                            >
-                                <span className="sr-only">Close menu</span>
-                                <XMarkIcon className="h-6 w-6" aria-hidden="true" />
-                            </button>
-                        </div>
-                        <hr className=" mt-2 border-black" />
-
-                        <div className="mt-6 flow-root">
-                            <div className="-my-6 divide-y divide-gray-800">
-                                <div className="space-y-2 py-6">
-
-                                    <ul
-                                        className={'-mx-3 block rounded-lg px-3 py-1 text-base font-semibold leading-7 text-black hover:bg-gray-50'}
-                                    >
-                                        <li className="p1 text-2xl">
-                                            <Link onClick={handleClick} to="home" smooth={true} duration={500}>
-                                                Home
-                                            </Link>
-                                        </li>
-
-                                        <li className="py-1 text-2xl">
-                                            {" "}
-                                            <Link onClick={handleClick} to="about" smooth={true} duration={500}>
-                                                About
-                                            </Link>
-                                        </li>
-                                        <li className="py-1 text-2xl">
-                                            {" "}
-                                            <Link onClick={handleClick} to="experience" smooth={true} duration={500}>
-                                                Experience
-                                            </Link>
-                                        </li>
-
-                                        <li className="py-1 text-2xl">
-                                            {" "}
-                                            <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
-                                                Skills
-                                            </Link>
-                                        </li>
-
-                                        <li className="py-1 text-2xl">
-                                            {" "}
-                                            <Link onClick={handleClick} to="projects" smooth={true} duration={500}>
-                                                Projects
-                                            </Link>
-                                        </li>
-                                        <li className="py-1 text-2xl">
-                                            {" "}
-                                            <Link onClick={handleClick} to="services" smooth={true} duration={500}>
-                                                Services
-                                            </Link>
-                                        </li>
-
-                                        <li className="py-1 text-2xl">
-                                            {" "}
-                                            <Link onClick={handleClick} to="achievement" smooth={true} duration={500}>
-                                                Achievements
-                                            </Link>
-                                        </li>
-
-                                        <li className="py-1 text-2xl">
-                                            {" "}
-                                            <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
-                                                Contact
-                                            </Link>
-                                        </li>
-                                    </ul>
-
-
-                                    <a
-                                        href="https://drive.google.com/file/d/1qyIZL4hiQZ2h3rCtyhfVG11ZJPhZdUpl/view?usp=sharing"
-                                        className="text-xl font-semibold py-2 flex items-center"
-                                    >
-                                        My Resume
-                                        <FaArrowRight className="ml-1 text-base arrow-icon" />
-                                    </a>
-                                </div>
-                                <div className="py-2 text-white flex text-xl">
-                                    <a href="https://github.com/ranjangupta4590" target="_blank" rel="noreferrer"><FaGithub className="mr-4 text-xl text-black" /></a>
-                                    <a href="https://www.linkedin.com/in/ranjan-kumar-2023s/" target="_blank" rel="noreferrer"><FaLinkedinIn className="mr-4 text-xl text-black" /></a>
-                                    <a href="https://www.instagram.com/ranjan_gupta_official/" target="_blank" rel="noreferrer"><FaInstagram className="mr-4 text-xl text-black" /></a>
-                                    <a href="mailto:ranjangupta35558@gmail.com" target="_blank" rel="noreferrer"><FaEnvelope className="text-xl text-black" /></a>
-                                </div>
-                            </div>
-                        </div>
-                    </Dialog.Panel>
-                </Dialog>
+                
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+                
 
                 {/* Social icons */}
 
