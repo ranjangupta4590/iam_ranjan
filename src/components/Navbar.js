@@ -67,8 +67,10 @@ const Navbar = () => {
 
                 {/* menu */}
                 <ul
-                    className={`${!mobileMenuOpen  && 'lg:flex'? 'hidden lg:flex' : 'lg:flex lg:flex-row md:flex-row  text-white font-semibold px-3 justify-center'
-                        }`}
+                    // className={`${!mobileMenuOpen  && 'lg:flex'? 'hidden lg:flex' : 'lg:flex lg:flex-row md:flex-row  text-white font-semibold px-3 justify-center'
+                    //     }`}
+                    className={`${!mobileMenuOpen ? 'hidden lg:flex' : 'flex lg:flex-row md:flex-row text-white font-semibold px-3 justify-center'}`}
+
                 >
                     <li className="cursor-pointer hover:underline hover:text-blue-500 ">
                         <Link to='home' className="px-3" smooth={true} duration={500}>
