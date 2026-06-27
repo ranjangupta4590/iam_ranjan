@@ -32,7 +32,7 @@ const Home = () => {
                 Ranjan Kumar
               </h1>
               <h2 className="text-2xl sm:text-2xl font-bold text-[#f5f8ff]">
-                I’m a{" "}
+                I'm a{" "}
                 <TypeAnimation
 
                   sequence={[
@@ -53,9 +53,9 @@ const Home = () => {
                 />
               </h2>
               <p className="text-white py-4 max-w-[700px]">
-                I’m a Full-Stack developer and always try to build exceptional applications.
+                I'm a Full-Stack developer and always try to build exceptional applications.
                 {/* specializing in building exceptional digital experiences. */}
-                Currently, I’m focused on building SaaS Full-stack web
+                Currently, I'm focused on building SaaS Full-stack web
                 applications using Next.js and trying to combine with Machine Learning and AI.
               </p>
               {/* <div className="flex flex-row gap-4">
@@ -128,7 +128,7 @@ const Home = () => {
                 <img
                   className="mx-auto h-75 w-75 "
                   src={PROFILE}
-                  alt="profile-image.png"
+                  alt="profile"
                 />
 
 
